@@ -357,21 +357,17 @@ SELECT * FROM PUBLISHER;
 			WHERE BranchID = 2 
 			AND BooksID = 45
 
-			
-
+		
 				<--2 QUERY =2 -->
 
-		
 			SELECT * FROM BOOK_COPIES
 			WHERE BooksID = 45	
-
-
 
 						<--3 QUERY -->
 						select * from borrower
 						go 
 						select CardNo , DateOut from BOOK_LOANS
-						where DateOut = 0
+						where DateOut < '2022-06-12'
 
 						<--doesnt work -->
 select a1.books_copies_branchID a1.Number_Of_Copies
